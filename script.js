@@ -16,6 +16,14 @@ btn.addEventListener("mouseup", (event)=>{
     event.target.style.transform = "scale(1)";
 });
 
+//randomize color to use
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
+  } 
 
 
 // for loop that write 16x16 box and give them class name and add them to the main container which is in html file
@@ -33,7 +41,7 @@ function makeGrid(input){
             box.classList.add("box");
             // Mouse over event to change color to red
             box.addEventListener("mouseover", (event) => {
-            event.target.style.background = "red";
+            event.target.style.background = randomColor();
         });
         container.appendChild(box);
         }
