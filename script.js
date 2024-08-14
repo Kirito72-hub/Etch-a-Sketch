@@ -1,5 +1,10 @@
 // used querySelector here with .container cuz the selectClassByName get me array and that dosnt work with append appendChiled
 const container = document.querySelector(".container");
+
+//adding button to the top of the page
+
+
+
 // for loop that write 16x16 box and give them class name and add them to the main container which is in html file
 for(let i=0; i<256; i++){
     const box = document.createElement("div");
@@ -18,4 +23,5 @@ for(let i=0; i<256; i++){
 //add button using DOM
 //buton on press function
 //pop up that gets integer smaller than 100
-//recreate the grid to suit the new grid inputted by the user
+//recreate the grid to suit the new grid inputted by the user 
+

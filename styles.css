@@ -12,3 +12,10 @@
     width: 40px;
     height: 40px;
 }
+
+.btn {
+    width:200px; 
+    height:50px;
+    margin: 10px 30%;
+    border: 2px solid black;
+}
