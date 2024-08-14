@@ -2,7 +2,19 @@
 const container = document.querySelector(".container");
 
 //adding button to the top of the page
-
+const btn = document.querySelector(".btn");
+btn.addEventListener("mouseover", (event)=>{
+    event.target.style.background = "grey";
+});
+btn.addEventListener("mouseout", (event)=>{
+    event.target.style.background = "white";
+});
+btn.addEventListener("mousedown", (event)=>{
+    event.target.style.transform = "scale(0.95)";
+});
+btn.addEventListener("mouseup", (event)=>{
+    event.target.style.transform = "scale(1)";
+});
 
 
 // for loop that write 16x16 box and give them class name and add them to the main container which is in html file
