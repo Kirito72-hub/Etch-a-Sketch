@@ -15,3 +15,7 @@ for(let i=0; i<256; i++){
     });
     container.appendChild(box);
 }
+//add button using DOM
+//buton on press function
+//pop up that gets integer smaller than 100
+//recreate the grid to suit the new grid inputted by the user
