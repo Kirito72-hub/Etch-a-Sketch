@@ -1,7 +1,7 @@
 // used querySelector here with .container cuz the selectClassByName get me array and that dosnt work with append appendChiled
 const container = document.querySelector(".container");
 
-//adding button to the top of the page
+//animation for hovering and pressing the button
 const btn = document.querySelector(".btn");
 btn.addEventListener("mouseover", (event)=>{
     event.target.style.background = "grey";
@@ -15,6 +15,7 @@ btn.addEventListener("mousedown", (event)=>{
 btn.addEventListener("mouseup", (event)=>{
     event.target.style.transform = "scale(1)";
 });
+
 
 
 // for loop that write 16x16 box and give them class name and add them to the main container which is in html file
