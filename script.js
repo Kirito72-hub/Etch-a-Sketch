@@ -48,11 +48,8 @@ function makeGrid(input){
 
     }
 }
-//add button using DOM
-//buton on press function
-//pop up that gets integer smaller than 100
-//recreate the grid to suit the new grid inputted by the user 
 
+//onClick effect for the button that strt the creating boxes function
 btn.onclick = function(){
     const value = prompt("enter grid number less than 100 ?");
     if(value<=100 && value>0)
