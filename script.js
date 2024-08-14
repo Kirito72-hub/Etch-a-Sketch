@@ -15,5 +15,3 @@ for(let i=0; i<256; i++){
     });
     container.appendChild(box);
 }
-
-//mouse hover event listener
