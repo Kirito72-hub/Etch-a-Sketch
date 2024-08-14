@@ -20,19 +20,24 @@ btn.addEventListener("mouseup", (event)=>{
 
 // for loop that write 16x16 box and give them class name and add them to the main container which is in html file
 function makeGrid(input){
+    // Clear existing boxes before creating a new grid
+    container.innerHTML = ''; // Clear previous grid
+
+    // Set the grid template based on the input size
+    container.style.gridTemplateColumns = `repeat(${input}, 1fr)`;
+    container.style.gridTemplateRows = `repeat(${input}, 1fr)`;
+
     for(let i=0; i<input; i++){
-        const box = document.createElement("div");
-        box.classList.add("box");
-          // Mouse over event to change color to red
-          box.addEventListener("mouseover", (event) => {
+        for(let j=0; j<input; j++){
+            const box = document.createElement("div");
+            box.classList.add("box");
+            // Mouse over event to change color to red
+            box.addEventListener("mouseover", (event) => {
             event.target.style.background = "red";
         });
-    
-        // Mouse out event to change color back to aqua
-        box.addEventListener("mouseout", (event) => {
-            event.target.style.background = "aqua"; // Reset to original color
-        });
         container.appendChild(box);
+        }
+
     }
 }
 //add button using DOM
